@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
-  spec.ios.vendored_frameworks = "PayPalCheckout.xcframework"
+  spec.ios.vendored_frameworks = "PayPalCheckout.xcframework", "CardinalMobile.framework"
 
   spec.license      = { :type => 'PAYPAL', :text => <<-LICENSE
       SDK LICENSE
